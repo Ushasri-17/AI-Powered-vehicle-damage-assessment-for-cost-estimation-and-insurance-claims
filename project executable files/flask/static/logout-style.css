@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+.logout-message {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logout-message h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.logout-message p {
+    font-size: 16px;
+    color: #4caf50;
+}
+
+.logout-message .login-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.logout-message .login-btn:hover {
+    background-color: #4caf50;
+    color: #fff;
+}

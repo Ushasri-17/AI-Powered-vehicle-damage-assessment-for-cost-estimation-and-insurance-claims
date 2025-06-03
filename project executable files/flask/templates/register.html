@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Damage Detection - Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='reg-style.css') }}">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Vehicle Damage Detection</div>
+        <div class="menu">
+            <a href="/index">Home</a>
+            <a href="/login">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+
+    <div class="register-container">
+        <div class="register-box">
+            <img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="avatar" style="border-radius: 50%; width: 150px; height: 150px;">
+            <form action="/login">
+                <input type="text" placeholder="Enter Name" required>
+                <input type="email" placeholder="Enter Email ID" required>
+                <input type="password" placeholder="Enter Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <div class="login-link">
+                Already have an account? <a href="/login">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

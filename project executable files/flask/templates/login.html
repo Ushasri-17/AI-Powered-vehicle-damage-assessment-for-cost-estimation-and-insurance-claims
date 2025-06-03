@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Login Page</div>
+        <div class="menu">
+            <a href="/index">Home</a>
+            <a href="#">Login</a>
+            <a href="/register">Register</a>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="avatar" style="border-radius: 50%; width: 150px; height: 150px;">
+            <form action="/prediction">
+                <input type="email" placeholder="Enter registered email ID" required>
+                <input type="password" placeholder="Enter Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

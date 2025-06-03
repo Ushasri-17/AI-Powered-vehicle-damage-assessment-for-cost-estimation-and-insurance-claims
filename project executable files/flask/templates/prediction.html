@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Damage Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pred-style.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Vehicle Damage Detection</h1>
+            <nav>
+                <a href="/index">Home</a>
+                <a href="/logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="upload-section">
+            <form action="/result" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="result-section">
+            {% if prediction %}
+                <p>The Estimated cost for the damage is: <span class="prediction">{{ prediction }}</span></p>
+            {% endif %}
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2021. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
